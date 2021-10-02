@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title>Menu | Hauaki Restaurant</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div>
+            <a href="index.html" class="Logo">
+                <H2>The Hauaki<br><span>Restaurant</span></H2>
+        </div>
+        <a href="#" for="toggle_button" class="toggle_button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar_links">
+
+            <ul>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="Reservations.html">Reservations</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="image-hero">
+        <img src="Images/MenuHero.jpg" alt="The Hauaki Restaurant" style="width: 100%;" class='main'>
+    </div>
+
+    <div class="menu-hero">
+        <h2 class="centered">Menu</h2>
+        <p>Traditional Māori beleived that the earth was the giver of all life. From the soil, came food and that same
+            food was
+            cooked beneath the earth. Māori people were hunters, gathers and crop farmers who harvested their food from
+            the
+            forst, stream, sea and garden. </p>
+    </div>
+
+    <div class="MainMenu">
+        <div Class="Appetizers">
+            <h2>APPETIZERS</h2>
+            <h4>REWENA BREAD <span>10</span></h4>
+            <p>Traditional Māori bread.</p>
+            <h4>PAUA FRITTER <span>16</span></h4>
+            <p>Finely diced pieces of paua, served with a side salad and horopito dressing.</p>
+            <h4>RAW FISH <span>20</span></h4>
+            <p>Dried snapper fish marinated in coconut cream, served with tomatoes and spring onions.</p>
+            <h4>POACHED SALMON <span>20</span></h4>
+            <p>Salmon poached in an orange and pistachio glaze, served with rewena bread.</p>
+            <h4>SEAFOOD BASKET <span>25</span></h4>
+            <p>Crumbed mussels, salt and pepper squid, crumbed hoki bites and garlic prawns.</p>
+        </div>
+
+        <div Class="Main">
+            <h2>MAIN</h2>
+            <h4>FISH OF THE DAY <span>25</span></h4>
+            <p>Beer battered fish and kumara fries, served with a side salad and homemade tartare.</p>
+            <h4>MUSSELS AND SCALLOPS <span>25</span></h4>
+            <p>Steamed mussel & scallop mousse, honey and soy broth.</p>
+            <h4>SEAFOOD CHOWDER <span>30</span></h4>
+            <p>Creamy chowder filled with terakihi, prawn, hoki, scallops and mussels, served with flatbread.</p>
+            <h4>PORK BELLY <span>30</span></h4>
+            <p>Slow cooked pork belly served on a bed of apple slaw with roasted kumara, and crispy noodle.</p>
+            <h4>LAMB STEAK <span>33</span></h4>
+            <p>New Zealand Lamb coated in a kawakawa crumb, served with Dijon mustard glazed carrots, roasted butternut
+                squash and a mushroom Jus.</p>
+            <h4>VENISON <span>33</span></h4>
+            <p>Venison crusted with horopito, served with glazed plums, cabbage salad and red wine Jus.</p>
+        </div>
+
+        <div Class="Dessert">
+            <h2>DESSERT</h2>
+            <h4>KĀPITI ICE CREAM <span>10</span></h4>
+            <p>Check for daily specials.</p>
+            <h4>STEAM PUDDING <span>12</span></h4>
+            <p>Golden syrup flavoured steam pudding, served with vanilla ice cream.</p>
+            <h4>MINI PAVLOVA <span>16</span></h4>
+            <p>Mini Pavlova served with kawakawa and lemon infused cream and fresh fruit.</p>
+            <h4>BANOFFEE PIE <span>16</span></h4>
+            <p>Toffee, fresh bananas and fresh cream.</p>
+        </div>
+    </div>
+    <div class="wrappercol2">
+        <a href="Resources/DinnerMenu.pdf" target="_blank">
+            <div class="DinnerMenu">
+                <H2>Dinner Menu</H2>
+            </div>
+        </a>
+        <a href="Resources/DrinksMenu.pdf" target="_blank">
+            <div class="DrinksMenu">
+                <H2>Drinks Menu</H2>
+            </div>
+        </a>
+    </div>
+</body>
+
+<footer class="footer">
+    <div class="container2">
+        <div class="footer-col">
+            <a href="index.html" class="Logo">
+                <H2>The Hauaki<br><span>Restaurant</span></H2>
+            </a>
+        </div>
+        <div class="footer-col">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="Reservations.html">Reservations</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Contact Us</h3>
+            <ul>
+                <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="mailto:info@HauakiRestaurant.co.nz">info@HauakiRestaurant.co.nz</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</html>
+<script>
+    const toggleButton = document.getElementsByClassName('toggle_button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar_links')[0]
+
+    toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active')
+    })
+</script>
