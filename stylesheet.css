@@ -1,0 +1,556 @@
+:root {
+	--primary-colour: #7ea0a4;
+	--Secondary-colour: #36585b;
+}
+
+* {
+	margin: 0%;
+	padding: 0%;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f7ffff;
+}
+
+
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color:  #f7ffff;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.Logo {
+	color: var(--Secondary-colour);
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 2px;
+}
+
+.Logo span {
+	color: #6d573e;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 20px;
+}
+
+.navbar_links ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.navbar_links li{
+	list-style: none;
+
+	
+}
+
+.navbar_links li a {
+	text-decoration: none;
+	font-size: 150%;
+	padding: 1rem;
+	display: block;
+	color: var(--Secondary-colour)
+}
+
+.navbar_links li a:hover{
+	color: var(--primary-colour);
+
+}
+.navbar_links li:hover {
+	cursor: pointer;
+}
+
+.toggle_button {
+ position: absolute;
+ top: 3rem;
+ right: 3rem;
+ display: block;
+ flex-direction: column;
+ justify-content: space-between;
+ width: 31px;
+ height: 21px;
+}
+
+.toggle_button .bar{
+	height: 4px;
+	width: 100%;
+	background-color: var(--Secondary-colour);
+	border-radius: 2px;
+
+
+}
+
+
+.label {
+	margin: 0 0px 0 200px;
+	font-size: 26px;
+	line-height: 70px;
+	display: none;
+}
+
+#toggle {
+	display: none;
+
+}
+.footer {
+	border-top: 1px solid #7ea0a4;
+	border-bottom: 1px solid #7ea0a4;
+	padding: 50px 0;
+}
+
+.container2 {
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.container2 ul {
+	list-style: none;
+	color: white;
+}
+.container2 h3 {
+	color: var(--Secondary-colour);
+	font-size: 20px;
+}
+
+.container2 a {
+	text-decoration: none;
+	color: var(--Secondary-colour);
+}
+.container2 a:hover {
+	text-decoration: none;
+	color: var(--primary-colour);
+}
+
+.footer-col {
+	width: 33%;
+	padding: 0 15px;
+}
+
+.wrappercol2 {
+	/* Index.html, Menu.html, AboutUs.html, ContactUS, */
+	display: grid;
+	grid-template-columns: 50%;
+	grid-template-areas: "sect1 sect2";
+}
+
+button {
+	/* Index.html, AboutUs.html, ContactUS, */
+	padding: 15px 70px;
+	margin: 30px 10px;
+	background: transparent;
+	border: 2px solid var(--Secondary-colour);
+	font-size: 20px;
+	letter-spacing: 2px;
+	cursor: pointer;
+}
+
+button:hover {
+	/* Index.html, AboutUs.html, ContactUS, */
+	background-color: var(--Secondary-colour);
+	color: white;
+	transition: all 0.4s;
+}
+
+.About {
+	/* Index.html */
+	padding: 80px 30px 40px 30px;
+	margin: 0, 20px;
+	text-align: center;
+}
+
+.About H2 {
+	/* Index.html */
+	font-size: 30px;
+	padding: 10px;
+}
+
+.Menu,
+.Bookings {
+	/* Index.html */
+	text-align: center;
+	padding: 100px;
+	margin: 5px;
+	color: white;
+}
+
+.Menu H2,
+.Bookings H2 {
+	/* Index.html */
+	font-size: 230%;
+	text-decoration: none;
+}
+
+.Menu {
+	/* Index.html */
+	grid-area: sect1;
+	background-image: url(Images/Menu.png);
+	background-position: center center;
+	background-size: auto 100%;
+}
+
+.Bookings {
+	/* Index.html */
+	grid-area: sect2;
+	background-image: url(Images/Bookings.png);
+	background-position: center center;
+	background-size: auto 100%;
+}
+
+.menu-hero {
+	/* Menu.html */
+	padding: 50px 30px 80px 30px;
+	text-align: center;
+	border-bottom: 1px solid #7ea0a4;
+}
+
+.menu-hero h2 {
+	/* Menu.html */
+	margin-bottom: 10px;
+	font-size: 60px;
+	color: var(--Secondary-colour);
+}
+
+.DrinksMenu,
+.DinnerMenu {
+	/* Menu.html */
+	text-align: center;
+	padding: 100px;
+	margin: 5px;
+	color: white;
+	border: 2px solid darkgray;
+}
+
+.DrinksMenu h2,
+.DinnerMenu h2 {
+	/* Menu.html */
+	font-size: 230%;
+}
+.DinnerMenu {
+	/* Menu.html */
+	grid-area: sect1;
+	background-image: url(Images/DinnerMenu.png);
+	background-position: center center;
+	background-size: auto 100%;
+}
+
+.DrinksMenu {
+	/* Menu.html */
+	grid-area: sect2;
+	background-image: url(Images/DrinksMenu.png);
+	background-position: center center;
+	background-size: auto 100%;
+}
+
+.MainMenu {
+	/* Menu.html */
+	text-align: center;
+	padding: 20px;
+}
+
+.Appetizers,
+.Main,
+.Dessert {
+	/* Menu.html */
+	padding: 20px;
+	line-height: 30px;
+}
+.MainMenu H2 {
+	/* Menu.html */
+	color: #6d573e;
+	font-size: 25px;
+}
+
+.MainMenu H4 {
+	/* Menu.html */
+	color: var(--Secondary-colour);
+	font-size: 20px;
+}
+.MainMenu span {
+	/* Menu.html */
+	color: #b63b29;
+	font-style: normal;
+}
+.ReservationsImg {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+.Reservations h2 {
+	/* Reservations.html */
+	margin-bottom: 10px;
+	font-size: 60px;
+	color: var(--Secondary-colour);
+}
+.Reservations {
+	top: 200px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	padding: 20px;
+	margin: 2%;
+}
+.ReservationsBtn {
+	text-align: center;
+}
+
+.Reservations input {
+	width: 60%;
+	padding: 12px 20px;
+	margin: 8px;
+	box-sizing: border-box;
+}
+
+.AboutUS {
+	/* AboutUS.html */
+	grid-area: sect1;
+	padding: 80px 30px 40px 30px;
+	margin: 0, 20px;
+	text-align: center;
+}
+
+.AboutUS H2 {
+	/* AboutUS.html */
+	font-size: 30px;
+	padding: 10px;
+	color: var(--Secondary-colour);
+}
+
+.LearnAboutKai,
+.TraditionalRecipes {
+	/* AboutUS.html */
+	text-align: center;
+	padding: 100px;
+	margin-bottom: 15px;
+	color: white;
+	border: 2px solid darkgray;
+}
+
+.LearnAboutKai h2,
+.TraditionalRecipes h2 {
+	/* AboutUS.html */
+	font-size: 230%;
+}
+.LearnAboutKai {
+	/* AboutUS.html */
+	grid-area: sect3;
+	background-image: url(Images/LearnAboutKai.png);
+	background-position: center center;
+	background-size: auto 100%;
+	margin-left: 10px;
+	margin-right: 5px;
+}
+.TraditionalRecipes {
+	/* AboutUS.html */
+	grid-area: sect4;
+	background-image: url(Images/TraditionalRecipes.png);
+	background-position: center center;
+	background-size: auto 100%;
+	margin-left: 5px;
+	margin-right: 10px;
+}
+
+.BOIBlurb {
+	/* AboutUS.html */
+	padding: 30px 30px 40px 30px;
+	margin: 0, 20px;
+	text-align: center;
+	border-top: 1px solid #7ea0a4;
+	border-bottom: 1px solid #7ea0a4;
+	grid-area: sect1;
+	background-color: var(--primary-colour);
+}
+
+.BOIBlurb H2 {
+	/* AboutUS.html */
+	font-size: 30px;
+	padding: 10px;
+	color: white;
+}
+.BOIBlurb button {
+	/* AboutUS.html */
+	background: white;
+	border: 2px solid var(--Secondary-colour);
+}
+
+.BOIBlurb button:hover {
+	/* AboutUS.html */
+	background-color: var(--Secondary-colour);
+	color: white;
+}
+
+.BOIVideo {
+	/* AboutUS.html */
+	grid-area: sect2;
+	border-top: 1px solid #7ea0a4;
+	padding: 5px;
+	border-bottom: 1px solid #7ea0a4;
+	background-color: var(--primary-colour);
+}
+
+.ContactInfo {
+	/* Contactus.html */
+	background-color: var(--primary-colour);
+	padding: 140px 40px 140px 40px;
+}
+
+.ContactInfo H5 {
+	font-size: 20px;
+	padding: 2px;
+}
+.ContactInfo a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+.ContactInfo a:hover {
+	color: var(--Secondary-colour);
+	cursor: pointer;
+}
+
+.italic {
+	font-style: italic;
+	font-size: 15px;
+}
+
+.LogoSec {
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 40px;
+	text-decoration: none;
+	margin: 2px;
+}
+
+.LogoSec span {
+	color: white;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 25px;
+	font-style: normal;
+	line-height: 20px;
+	font-weight: light;
+}
+
+.ContactMap {
+	/* Contactus.html */
+	position: relative;
+	text-align: right;
+	height: 700px;
+	width: 600px;
+}
+
+.gmap_canvas {
+	/* Contactus.html */
+	overflow: hidden;
+	padding-bottom: 56.28%;
+	background: none !important;
+	position: relative;
+	height: 700px;
+	width: 600px;
+}
+
+.PrivacyPolicy {
+	padding: 30px;
+	margin: 2%;
+	border-radius: 20px;
+}
+
+.PrivacyPolicy H2 {
+	/* PrivacyPolicy.html */
+	color: var(--Secondary-colour);
+	margin: 10px;
+	font-size: 35px;
+}
+
+.PrivacyPolicy p {
+	/* PrivacyPolicy.html */
+	margin: 15px;
+}
+
+.PrivacyPolicy li {
+	/* PrivacyPolicy.html */
+	list-style: none;
+	text-decoration: none;
+	margin-left: 40px;
+}
+
+.PrivacyPolicy h5 {
+	/* PrivacyPolicy.html */
+	margin: 15px;
+	margin-top: 30px;
+	font-size: 20px;
+	color: var(--Secondary-colour);
+}
+
+.PrivacyPolicy h5 a {
+	/* PrivacyPolicy.html */
+	text-decoration: none;
+	color: var(--Secondary-colour);
+}
+.PrivacyPolicy h5 a:hover {
+	/* PrivacyPolicy.html */
+	text-decoration: none;
+	color: var(--primary-colour);
+}
+
+@media screen and (max-width: 786px) {
+	nav {
+		display: inline;
+	}
+	
+	label {
+		display: block;
+		cursor: pointer;
+		width: 26px;
+		float: right;
+	}
+	/*FIXME: add the burger menu drop down */
+
+	
+	.toggle_button {
+		display: flex;
+	}
+
+	.navbar_links{
+		display: none;
+		width: 100%;
+	}
+
+	.navbar {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.navbar_links ul{
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.navbar_links li {
+		text-align: center;
+	}
+
+	.navbar_links.active {
+		display: flex;
+	}
+		
+	.wrappercol2 {
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-areas: "sect1" "sect2";
+	}
+	.footer-col {
+		width: 100%;
+	}
+}
