@@ -1,7 +1,3 @@
-RewriteEngine On
-
-Rw
-
 AuthType Basic
 AuthName "Restricted access"
 AuthUserFile "/app/.htpasswd"
