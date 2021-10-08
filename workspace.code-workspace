@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Images"
+		},
+		{
+			"path": "../Resources"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "HauakiRestaurant-"
+	}
+}
