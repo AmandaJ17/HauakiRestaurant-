@@ -1,1 +1,1 @@
-<?php include_once("StaffPortal.html"); ?>
+<?php include_once("index.html"); ?>
