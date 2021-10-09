@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Restricted access"​
-AuthUserFile "https://github.com/AmandaJ17/HauakiRestaurant-/. htpasswd"​
-Require valid-user​
