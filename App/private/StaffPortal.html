@@ -5,11 +5,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Staff Portal</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<title>Staff Portal</title>
 </head>
 
 <body>
-    <p>HELLLLLOOO</p>
+    <nav class="navbar">
+        <div>
+            <a href="#" class="Logo">
+                <H2>The Hauaki<br><span>Restaurant</span></H2>
+        </div>
+        <a href="#" for="toggle_button" class="toggle_button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar_links">
+
+            <ul>
+                <li class="staffPortal"><a href="#">Exit</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="Staff">
+        <H2>Staff Portal</H2>
+    </div>
+                <div class="roster">
+                    <H2>Roster Details:</H2>
+                    <div class="Week">
+                    <select name="Week">
+                        <option value="This Week">Current Week</option>
+                        <option value="Next Week">Next Week</option>
+                    </select>
+                    </div>
+                    <Table>
+                        <tr>
+                            <th>Employee</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thrusday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                            <th>Sunday</th>
+                        </tr>
+                        <tr>
+                            <td>Amanda</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>Jamie</td>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>Alex</td>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+
+                    </Table>
+                </div>
+                <div class="ContactStaff">
+                    <H2 >Staff Contact Details:</H2>
+                    <table class="ContactTable">
+                        <tr>
+                            <th>Name</th>
+                            <th>Moblie Number</th>
+                            <th>Role</th>
+                        </tr>
+                        <tr>
+                            <td>Amanda Stacey</td>
+                            <td>021 012 3456</td>
+                            <td>Front House</td>
+                        </tr>
+                        <tr>
+                            <td>Jamie Anderson</td>
+                            <td>022 323 4453</td>
+                            <td>Front House</td>
+                        </tr>
+                        <tr>
+                            <td>Alex Smith</td>
+                            <td>023 444 1122</td>
+                            <td>Chief</td>
+                        </tr>
+                    </table>
+                </div>
+                
+
+    <footer class="footer">
+        <div class="container2">
+            <div class="footer-col">
+                <a href="index.html" class="Logo">
+                    <H2>The Hauaki<br><span>Restaurant</span></H2>
+                </a>
+            </div>
+            <div class="footer-col">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="Menu.html">Menu</a></li>
+                    <li><a href="Reservations.html">Reservations</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="mailto:info@HauakiRestaurant.co.nz">info@HauakiRestaurant.co.nz</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script>
+    const toggleButton = document.getElementsByClassName('toggle_button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar_links')[0]
+
+    toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active')
+    })
+</script>
 </body>
 
 </html>
