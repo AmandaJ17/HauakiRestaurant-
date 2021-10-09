@@ -25,6 +25,13 @@ body {
 	padding-right: 20px;
 }
 
+.staffPortal {
+	color: #f7ffff;
+	background-color: var(--Secondary-colour);
+	border-radius: 5px;
+	
+}
+
 .Logo {
 	color: var(--Secondary-colour);
 	text-transform: uppercase;
@@ -84,7 +91,6 @@ body {
 	width: 100%;
 	background-color: var(--Secondary-colour);
 	border-radius: 2px;
-
 
 }
 
