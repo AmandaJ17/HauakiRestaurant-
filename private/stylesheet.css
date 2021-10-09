@@ -149,6 +149,7 @@ body {
 .ContactStaff,
 .roster {
 	padding: 10px;
+	width: auto;
 }
 
 .ContactStaff H2,
