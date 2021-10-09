@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Restricted access"
+AuthUserFile "/Users/amandastacey/Desktop/Web Development/Assignment Three/HauakiRestaurant/HauakiRestaurant-/. htpasswd"
+Require valid-user
