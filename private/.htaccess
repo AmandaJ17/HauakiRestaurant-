@@ -1,5 +1,5 @@
-AuthType Basic
+AuthType Basic 
 AuthName "Restricted access"​
-AuthUserFile "/Users/amandastacey/Desktop/Web Development/Assignment Three/HauakiRestaurant/HauakiRestaurant-/.htpasswd"​
+AuthUserFile "/HauakiRestaurant-/private/.htpasswd"​
 Require valid-user​
 
