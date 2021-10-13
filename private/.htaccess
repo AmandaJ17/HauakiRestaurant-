@@ -1,5 +1,0 @@
-AuthType Basic 
-AuthName "Restricted access"​
-AuthUserFile "/HauakiRestaurant-/private/.htpasswd"​
-Require valid-user​
-
