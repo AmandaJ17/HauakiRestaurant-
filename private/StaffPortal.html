@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheetprivate.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 <title>Staff Portal</title>
 </head>
@@ -36,11 +37,12 @@
                 <div class="roster">
                     <H2>Roster Details:</H2>
                     <div class="Week">
-                    <select name="Week">
-                        <option value="This Week">Current Week</option>
-                        <option value="Next Week">Next Week</option>
+                    <select id="Week">
+                        <option class="thisWeek" value="This Week">Current Week</option>
+                        <option class="nextWeek"value="Next Week">Next Week</option>
                     </select>
                     </div>
+                    <div id="thisWeek">
                     <Table class="table table-striped">
                         <tr>
                             <th>Employee</th>
@@ -82,8 +84,53 @@
                             <th>1600-2200</th>
                             <th>1500-2100</th>
                         </tr>
-
                     </Table>
+                    </div>
+                    <div id="nextWeek">
+                        <Table class="table table-striped">
+                            <tr>
+                                <th>Employee</th>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                                <th>Thrusday</th>
+                                <th>Friday</th>
+                                <th>Saturday</th>
+                                <th>Sunday</th>
+                            </tr>
+                            <tr>
+                                <td>Amanda</th>
+                                <th>CLOSED</th>
+                                <th>CLOSED</th>
+                                <th>CLOSED</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td>Jamie</td>
+                                <th>CLOSED</th>
+                                <th>CLOSED</th>
+                                <th>CLOSED</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td>Alex</td>
+                                <th>CLOSED</th>
+                                <th>CLOSED</th>
+                                <th>CLOSED</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </Table>
+                    </div>
+
                 </div>
                 <div class="ContactStaff">
                     <H2 >Staff Contact Details:</H2>
@@ -147,6 +194,30 @@
     toggleButton.addEventListener('click', () => {
         navbarLinks.classList.toggle('active')
     })
+
+    $(document).ready(function () {
+            //unhides this week option content
+            $("#thisWeek").show();
+            //hides next week option content
+            $("#nextWeek").hide();   
+
+            //listen to dropdown for change
+            $("#Week").change(function () {
+                if ($(this).val() =="Next Week") {
+                    $('#thisWeek').hide();
+                    //unhides current item
+                    $('#nextWeek').show(); 
+                }
+                else {
+                    //unhides this week option content
+                    $("#thisWeek").show();
+                    //hides next week option content
+                    $("#nextWeek").hide();
+
+                }
+            });
+
+        });
 </script>
 </body>
 
