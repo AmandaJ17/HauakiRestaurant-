@@ -58,30 +58,30 @@
                             <td>Amanda</th>
                             <th>CLOSED</th>
                             <th>CLOSED</th>
-                            <th>CLOSED</th>
-                            <th>1600-2000</th>
-                            <th>1600-2000</th>
-                            <th>1600-2000</th>
+                            <th>1630-2200</th>
+                            <th>1630-2200</th>
+                            <th>1630-2200</th>
+                            <th></th>
                             <th></th>
                         </tr>
                         <tr>
                             <td>Jamie</td>
                             <th>CLOSED</th>
                             <th>CLOSED</th>
-                            <th>CLOSED</th>
                             <th></th>
                             <th></th>
-                            <th>1600-2200</th>
-                            <th>1400-2000</th>
+                            <th></th>
+                            <th>1630-2200</th>
+                            <th>1630-2200</th>
                         </tr>
                         <tr>
                             <td>Alex</td>
                             <th>CLOSED</th>
                             <th>CLOSED</th>
-                            <th>CLOSED</th>
                             <th></th>
                             <th></th>
-                            <th>1600-2200</th>
+                            <th></th>
+                            <th>1400-2200</th>
                             <th>1500-2100</th>
                         </tr>
                     </Table>
@@ -102,30 +102,30 @@
                                 <td>Amanda</th>
                                 <th>CLOSED</th>
                                 <th>CLOSED</th>
-                                <th>CLOSED</th>
                                 <th></th>
-                                <th></th>
-                                <th></th>
+                                <th>1630-2200</th>
+                                <th>1630-2200</th>
+                                <th>1630-2200</th>
                                 <th></th>
                             </tr>
                             <tr>
                                 <td>Jamie</td>
                                 <th>CLOSED</th>
                                 <th>CLOSED</th>
-                                <th>CLOSED</th>
+                                <th>1630-2200</th>
                                 <th></th>
                                 <th></th>
                                 <th></th>
-                                <th></th>
+                                <th>1630-2200</th>
                             </tr>
                             <tr>
                                 <td>Alex</td>
                                 <th>CLOSED</th>
                                 <th>CLOSED</th>
-                                <th>CLOSED</th>
                                 <th></th>
                                 <th></th>
-                                <th></th>
+                                <th>1400-2200</th>
+                                <th>1600-2200</th>
                                 <th></th>
                             </tr>
                         </Table>
@@ -204,8 +204,9 @@
             //listen to dropdown for change
             $("#Week").change(function () {
                 if ($(this).val() =="Next Week") {
+                    //hides this week roster
                     $('#thisWeek').hide();
-                    //unhides current item
+                    //unhides next week roster
                     $('#nextWeek').show(); 
                 }
                 else {
